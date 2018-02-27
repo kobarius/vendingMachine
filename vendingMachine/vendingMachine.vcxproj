@@ -20,6 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\vendingMachine.c" />
+    <ClCompile Include="src\vm_inventory.c" />
     <ClCompile Include="src\vm_reset.c" />
   </ItemGroup>
   <ItemGroup>

@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include "vendingMachine.h"
 
 void vm_reset(DRINK *varDrink, EXCHANGE *varExchange) {
@@ -10,9 +9,20 @@ void vm_reset(DRINK *varDrink, EXCHANGE *varExchange) {
     strcpy(varDrink[1].name, "しろたんおれんぢじゅーす");
     varDrink[1].price = 130;
     varDrink[1].num = 10;
-    // しろたん水（ヤバい系）
-    strcpy(varDrink[2].name, "しろたん水（ヤバい系）");
+    // しろたんほーじちゃ
+    strcpy(varDrink[2].name, "しろたんほーじちゃ");
     varDrink[2].price = 130;
     varDrink[2].num = 10;
+    // しろたん水（ヤバい系）
+    strcpy(varDrink[3].name, "しろたん水（ヤバい系）");
+    varDrink[3].price = 60;
+    varDrink[3].num = 5;
+
+    //お釣りの数
+    varExchange->num0010 = 100;
+    varExchange->num0050 = 100;
+    varExchange->num0100 = 100;
+    varExchange->num0500 = 100;
+    varExchange->num1000 = 0;
 
 }
