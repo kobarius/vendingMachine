@@ -19,10 +19,10 @@ void vm_reset(DRINK *varDrink, EXCHANGE *varExchange) {
     varDrink[3].num = 5;
 
     //‚¨’Ş‚è‚Ì”
-    varExchange->num0010 = 100;
-    varExchange->num0050 = 100;
-    varExchange->num0100 = 100;
-    varExchange->num0500 = 100;
+    varExchange->num0010 = 20;
+    varExchange->num0050 = 10;
+    varExchange->num0100 = 20;
+    varExchange->num0500 = 5;
     varExchange->num1000 = 0;
 
 }

@@ -21,13 +21,11 @@ void vm_inventory(DRINK *varDrink, EXCHANGE *varExchange, bool *errflgDrink, boo
 
     // ’Þ‘KØ‚ê‚ÌŠm”FF‘S‚Ä‚Ìê‡i10`900‰~j‚É‘Î‰ž‚Å‚«‚È‚¢ê‡‚Í’Þ‘KØ‚ê‚Æ‚·‚é
     // case1:900‰~‚ðì‚ê‚È‚¢ê‡
-    sumCoin = varExchange->num0500 * 500 + varExchange->num0100 * 100;
-    if (sumCoin < 900) {
+    if (~(((varExchange->num0500 >= 1) && (varExchange->num0100 >= 4) || (varExchange->num0100 >= 9))) {
         *errflgCoin = true;
     }
     // case2:90‰~‚ðì‚ê‚È‚¢ê‡
-    sumCoin = varExchange->num0050 * 50 + varExchange->num0010 * 10;
-    if (sumCoin < 90) {
+    if (~(((varExchange->num0050 >= 1) && (varExchange->num0010 >= 4) || (varExchange->num0010 >= 9))) {
         *errflgCoin = true;
     }
 
